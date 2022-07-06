@@ -353,7 +353,7 @@ of code below the Schedule `<h2>` header below with
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
-
+**Due to the online nature of this workshop, the programme allows for regular breaks on the hour. For example we will start at 09:00 then break at 9:50 to 10:00 and then continue for 50 minutes again till 13:00**
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
