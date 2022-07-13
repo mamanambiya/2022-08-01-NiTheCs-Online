@@ -4,11 +4,11 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "National Institute for Theoretical and Computational Sciences (NiTheCs)"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+# address: "Online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "South Africa"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "-29.8674172"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "30.9785385"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+# latitude: "-29.8674172"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+# longitude: "30.9785385"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "August 1-5, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00-13:00 UTC+2 (South Africa)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-08-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -116,28 +116,28 @@ address.
 {% else %}
 {% assign online = "false" %}
 {% endif %}
-{% if page.latitude and page.longitude and online == "false" %}
-<p id="where">
+<!-- {% if page.latitude and page.longitude and online == "false" %} -->
+<!-- <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
+  {{page.address}}. -->
+  <!-- Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
-</p>
-{% elsif online == "true_public" %}
-<p id="where">
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>. -->
+<!-- </p> -->
+<!-- {% elsif online == "true_public" %} -->
+<!-- <p id="where">
   <strong>Where:</strong>
-  online at <a href="{{page.address}}">{{page.address}}</a>.
+  Online at <a href="{{page.address}}">{{page.address}}</a>.
   If you need a password or other information to access the training,
   the instructor will pass it on to you before the workshop.
-</p>
-{% elsif online == "true_private" %}
+</p> -->
+<!-- {% elsif online == "true_private" %} -->
 <p id="where">
   <strong>Where:</strong> This training will take place online.
   The instructors will provide you with the information you will need to connect to this meeting.
 </p>
-{% endif %}
+<!-- {% endif %} -->
 
 {% comment %}
 DATE
@@ -177,15 +177,15 @@ special instructions.
 {% endcomment %}
 <p id="accessibility">
   <strong>Accessibility:</strong>
-{% if online == "false" %}
+<!-- {% if online == "false" %}
   We are committed to making this workshop
   accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
 </p>
 <ul>
   <li>The room is wheelchair / scooter accessible.</li>
   <li>Accessible restrooms are available.</li>
-</ul>
-<p>
+</ul> -->
+<!-- <p>
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
@@ -193,12 +193,12 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
-{% else %}
+{% else %} -->
   We are dedicated to providing a positive and accessible learning environment for all. Please
   notify the instructors in advance of the workshop if you require any accommodations or if there is
   anything we can do to make this workshop more accessible to you.
-</p>
-{% endif %}
+<!-- </p>
+{% endif %} -->
 
 {% comment %}
 CONTACT EMAIL ADDRESS
